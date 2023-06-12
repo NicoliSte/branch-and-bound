@@ -84,7 +84,7 @@ def print_tree_node(level, connector, value):
     fract_value = [f'x[{i}] = {val}' if val % 1 != 0 else f'x[{i}] = {int(val)}' for i, val in enumerate(value)]
     print(f'{indent}{connector}{", ".join(fract_value)}')
 
-c, A, b = read_input('teste2.txt')
+c, A, b = read_input('teste4.txt')
 
 # Relaxação linear
 relaxed_solution = np.linalg.lstsq(A, b, rcond=None)[0].tolist()
